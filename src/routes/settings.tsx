@@ -30,8 +30,9 @@ const KP = [
 function SettingsPage() {
   const [country, setCountry] = useState<(typeof COUNTRIES)[number]>("Kenya");
   const [lang, setLang] = useState<(typeof LANGS)[number]>("English");
-  const [model, setModel] = useState(MODELS[0].id);
+  const [model, setModel] = useState<string>(MODELS[0].id);
   const [packs, setPacks] = useState(KP);
+
 
   return (
     <>
